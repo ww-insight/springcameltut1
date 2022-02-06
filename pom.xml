@@ -62,6 +62,12 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- camel visualisation -->
+    <dependency>
+      <groupId>io.hawt</groupId>
+      <artifactId>hawtio-springboot</artifactId>
+      <version>2.14.4</version>
+    </dependency>
 
   </dependencies>
 
@@ -92,6 +98,13 @@
         <artifactId>camel-maven-plugin</artifactId>
         <version>3.15.0</version>
       </plugin>
+
+        <!-- allows the route to be ran via 'mvn camel:run' -->
+        <plugin>
+            <groupId>io.hawt</groupId>
+            <artifactId>hawtio-maven-plugin</artifactId>
+            <version>2.14.4</version>
+        </plugin>
     </plugins>
   </build>
 
